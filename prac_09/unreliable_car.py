@@ -7,8 +7,6 @@ class UnreliableCar(Car):
     """Subclass of car which is Unreliable."""
     def __init__(self, name: str, fuel: float, reliability: float):
         super().__init__(name, fuel)
-        self.name = name
-        self.fuel = fuel
         self.reliability = reliability
 
     def drive(self, distance):
